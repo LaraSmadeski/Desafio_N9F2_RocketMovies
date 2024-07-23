@@ -1,4 +1,4 @@
-import { Container, Content } from "./styles";
+import { Container, NewNote } from "./styles";
 import { HiPlus } from "react-icons/hi2";
 
 import { Header } from "../../components/Header";
@@ -11,15 +11,12 @@ export function Home(){
             <main>
                 <div className="top">
                     <h1>Meus filmes</h1>
-                    <button>
+                    <NewNote to="/new">
                         <HiPlus />
                         Adicionar filme
-                    </button>
+                    </NewNote>
                 </div>
-
-                <Content>
                     <Note />
-                </Content>
             </main>
         </Container>
     );

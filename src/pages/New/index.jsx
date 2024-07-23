@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 import { Container, Content } from "./styles";
 import { FiArrowLeft } from "react-icons/fi";
 
@@ -13,7 +15,9 @@ export function New(){
         <Container>
             <Header />
             <main>
-                <ButtonText icon={FiArrowLeft} title="Voltar"/>
+                <Link to="/">
+                    <ButtonText icon={FiArrowLeft} title="Voltar"/>
+                </Link>
 
                 <Content>
                     <h1>Novo filme</h1>

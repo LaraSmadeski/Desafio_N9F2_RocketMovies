@@ -9,7 +9,7 @@ export function Header(){
                 <input placeholder="Pesquisar pelo título" />
             </Search>
 
-            <Profile>
+            <Profile to="/profile">
                 <strong>Lara Smadeski</strong>
                 <img src="https:/github.com/larasmadeski.png" alt="" />
             </Profile>

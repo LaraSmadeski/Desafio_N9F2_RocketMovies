@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { Link } from "react-router-dom";
 
 export const Container = styled.div`
     width: 100%;
@@ -23,24 +24,20 @@ export const Container = styled.div`
                 font-weight: 400;
                 font-size: 32px;
             }
-
-            button {
-                height: 48px;
-                padding: 16px 32px;
-                border: 0;
-                border-radius: 8px;
-
-                background-color: ${({theme}) => theme.COLORS.PINK};
-                color: ${({theme}) => theme.COLORS.BACKGROUND_800};
-
-                display: flex;
-                align-items: center;
-                gap: 8px;
-            }
         }
     }
-`;
+    `;
 
-export const Content = styled.div`
+export const NewNote = styled(Link)`
+    height: 48px;
+    padding: 16px 32px;
+    border: 0;
+    border-radius: 8px;
 
+    background-color: ${({theme}) => theme.COLORS.PINK};
+    color: ${({theme}) => theme.COLORS.BACKGROUND_800};
+
+    display: flex;
+    align-items: center;
+    gap: 8px;
 `;

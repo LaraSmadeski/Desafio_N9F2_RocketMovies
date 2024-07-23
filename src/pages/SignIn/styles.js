@@ -41,8 +41,8 @@ export const Form = styled.form`
         }
     }
 
-    .create {
-        margin-top: 42px;
+    button {
+        margin-bottom: 42px;
     }
 `;
 

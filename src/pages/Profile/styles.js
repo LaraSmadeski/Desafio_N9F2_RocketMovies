@@ -4,9 +4,11 @@ export const Container = styled.div`
     background-color: ${({theme}) => theme.COLORS.BACKGROUND_300};
     height: 144px;
 
-    .back {
-        padding-top: 64px;
-        padding-left: 144px;
+    a {
+        button {
+            padding-top: 64px;
+            padding-left: 144px;
+        }
     }
 `;
 
